@@ -1,6 +1,6 @@
-package com.yupi.yuapiclientsdk;
+package com.zhang.zhangapiclientsdk;
 
-import com.yupi.yuapiclientsdk.client.YuApiClient;
+import com.zhang.zhangapiclientsdk.client.ZhangApiClient;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -12,15 +12,15 @@ import org.springframework.context.annotation.Configuration;
 @ConfigurationProperties("yuapi.client")
 @Data
 @ComponentScan
-public class YuApiClientConfig {
+public class ZhangApiClientConfig {
 
     private String accessKey;
 
     private String secretKey;
 
     @Bean
-    public YuApiClient yuApiClient() {
-        return new YuApiClient(accessKey, secretKey);
+    public ZhangApiClient yuApiClient() {
+        return new ZhangApiClient(accessKey, secretKey);
     }
 
 }

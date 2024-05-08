@@ -1,4 +1,4 @@
-package com.yupi.yuapiclientsdk.utils;
+package com.zhang.zhangapiclientsdk.utils;
 
 import cn.hutool.crypto.digest.DigestAlgorithm;
 import cn.hutool.crypto.digest.Digester;

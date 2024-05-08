@@ -1,18 +1,18 @@
-package com.yupi.yuapiclientsdk.client;
+package com.zhang.zhangapiclientsdk.client;
 
 import cn.hutool.core.util.RandomUtil;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import cn.hutool.json.JSONUtil;
-import com.yupi.yuapiclientsdk.model.User;
+import com.zhang.zhangapiclientsdk.model.User;
 
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.yupi.yuapiclientsdk.utils.SignUtils.genSign;
+import static com.zhang.zhangapiclientsdk.utils.SignUtils.genSign;
 
-public class YuApiClient {
+public class ZhangApiClient {
 
     private static final String GATEWAY_HOST = "http://localhost:8104";
 
@@ -20,7 +20,7 @@ public class YuApiClient {
 
     private String secretKey;
 
-    public YuApiClient(String accessKey, String secretKey) {
+    public ZhangApiClient(String accessKey, String secretKey) {
         this.accessKey = accessKey;
         this.secretKey = secretKey;
     }
