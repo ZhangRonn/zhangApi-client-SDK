@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-@ConfigurationProperties("yuapi.client")
+@ConfigurationProperties("zhangapi.client")
 @Data
 @ComponentScan
 public class ZhangApiClientConfig {
@@ -19,7 +19,7 @@ public class ZhangApiClientConfig {
     private String secretKey;
 
     @Bean
-    public ZhangApiClient yuApiClient() {
+    public ZhangApiClient zhangApiClient() {
         return new ZhangApiClient(accessKey, secretKey);
     }
 
